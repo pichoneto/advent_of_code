@@ -15,7 +15,7 @@ const read = (yearPath, problem, part) => {
 };
 
 // This expects to have the year passed as a cli argument
-const yearPath = path.join(__dirname, "..", "2015");
+const yearPath = path.join(__dirname, "..", process.argv[2]);
 const problems = readdirSync(yearPath, { withFileTypes: true })
   .filter((item) => item.isDirectory())
   .map((dir) => dir.name)
