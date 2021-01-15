@@ -31,4 +31,4 @@ problems.map((problem) => {
   content += msg;
 });
 
-writeFileSync(path.join(yearPath, "report.md"), content);
+writeFileSync(path.join(yearPath, "README.md"), content);
